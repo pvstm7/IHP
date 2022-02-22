@@ -24,14 +24,3 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      # ~/.circleci/config.yml
-version: 2
-jobs:
-  test: 2
-    docker:
-      - image: cimg/<language>:<version TAG>
-        auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
-    parallelism: 4
-
